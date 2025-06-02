@@ -5,7 +5,7 @@ import re
 pd.set_option('display.max_colwidth', None)
 
 # Load the data
-df = pd.read_csv("amazon_data.csv")
+df = pd.read_csv("amazon_raw_data.csv")
 
 # Replace line breaks in prices
 df["price"] = df["price"].str.replace("\n", ".", regex=False)
@@ -34,4 +34,4 @@ df = replace_na_with_empty(df)
 
 
 # Save to CSV
-df.to_csv("amazon_scraping_data_pfa.csv", index=False, encoding='utf-8')
+df.to_csv("amazon_clean_data.csv", index=False, encoding='utf-8')
