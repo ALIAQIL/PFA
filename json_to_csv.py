@@ -40,7 +40,7 @@ def json_to_csv_pandas_safe(json_file_path, csv_file_path):
 
 # Exemple d'utilisation
 json_file = "amazon_data.json"
-csv_file = "amazon_data.csv"
+csv_file = "amazon_raw_data.csv"
 
 # Utilisez cette version améliorée
 json_to_csv_pandas_safe(json_file, csv_file)
