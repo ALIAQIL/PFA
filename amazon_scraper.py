@@ -212,7 +212,7 @@ def main():
     except:
         pass
 
-    with open('data_amazon2.json', 'r', encoding='utf-8') as f:
+    with open('product_links.json', 'r', encoding='utf-8') as f:
         urls_to_scrape = [item['link'] for item in json.load(f) if isinstance(item, dict) and 'link' in item]
 
     scraped_urls = {item['url'] for item in scraped_products}
