@@ -6,10 +6,10 @@ from selenium.webdriver.support import expected_conditions as EC
 import json
 import time
 
-#with open("data_amazon2.json", "w") as f:
+#with open("product_links.json", "w") as f:
     #json.dump([], f)
 
-def write_json(new_data, filename='data_amazon2.json'):
+def write_json(new_data, filename='product_links.json'):
     with open(filename,'r+') as file:
           # First we load existing data into a dict.
         file_data = json.load(file)
