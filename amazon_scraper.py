@@ -193,7 +193,7 @@ def _extract_product_data(browser, wait, element, url):
     return data
 
 # JSON Writer
-def _write_json(data_list, filename='scraped_products.json'):
+def _write_json(data_list, filename='amazon_data.json'):
     try:
         with open(filename, 'w', encoding='utf-8') as file:
             json.dump(data_list, file, indent=4, ensure_ascii=False)
@@ -207,7 +207,7 @@ def main():
     os.makedirs('captchas', exist_ok=True)
 
     try:
-        with open('scraped_products.json', 'r', encoding='utf-8') as f:
+        with open('amazon_data.json', 'r', encoding='utf-8') as f:
             scraped_products = json.load(f)
     except:
         pass
