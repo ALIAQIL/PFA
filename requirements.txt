@@ -1,0 +1,18 @@
+# Dépendances principales
+streamlit==1.43.2
+pytesseract==0.3.13
+
+
+# Web Scraping & Automation
+selenium==4.31.0
+requests==2.28.1
+beautifulsoup4==4.13.3
+
+# Data Handling
+pandas==2.2.3
+
+# Vector Database
+lancedb==0.21.1
+
+# RAG & LLM
+langchain==0.3.21
